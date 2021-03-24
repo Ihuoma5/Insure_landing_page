@@ -40,6 +40,10 @@
   background-color: hsl(270, 9%, 17%);
 }
 
+.neutral-bg-color-light-grey {
+  background-color: hsl(0, 0%, 98%);
+}
+
 /* Background Gradients */
 .primary-bg-gradient-violet {
   background: linear-gradient(hsl(270, 9%, 17%) 80%, hsla(0, 0%, 100%, 0) 20%);
