@@ -1,161 +1,77 @@
-*{
-    margin: 0;
-    padding: 0  ;
-}
-.heading hr{
-    width: 6em;
-    /* margin-top: 2em; */
-    }
-    a{ 
-        text-decoration: none;
-        color: rgba(0, 0, 0, 0.6);
-    }
-    .navbar-nav button{
-        background-color: white;
-        color: black;
-        border: 1px solid black;
-    }
-/* 
-    .nav-link:hover{
-        color: #fff;
-    
-    } */
-    .navbar-nav button:hover {
-        background-color: hsl(256, 26%, 20%);
-        transition: 2s;
-    }
-    .view:hover{ 
-        color: white;
-    }
-.headr{
-    background-color: hsl(256, 26%, 20%);
-    color: #fff;
-    /* display: flex; */
-    height: 500px;
-    font-family: 'DM Serif Display', serif;
-    /* position: absolute; */
-}
-.intro  {
-    font-size: 4em;
-    font-weight: 400px;
-    padding-left: 2em;
-    display: flex;
-}
-.talk{
-    Font-size: 16px;
-    padding-left: 8em;
-    font-weight: normal;
-    color: rgba(255, 255, 255, 0.6);
-    font-family: 'DM Serif Display', serif;
-}
-#img{
-        padding-top: 3em; 
-    padding-left: 41em;
-        padding-bottom: 3em;
-    /* margin-top: ; */
-        /* border: 7px solid yellow; */
-        box-sizing: content-box;
-        position: relative;
-        bottom: 20em;  
-        /* width: 30em; */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
 
-}
-button{
-       border: 1px solid  rgba(255, 255, 255, 0.8) ;
-       padding: 0.5em 0.5em;
-        background-color: hsl(256, 26%, 20%); 
-        color: rgba(255, 255, 255, 0.8);
-
-}
-/* .different, ul{ */
-    /* font-family: 'Karla', sans-serif; */
-
-/* } */
-.different{
-    /* border: 1px hsl(256, 26%, 20%) solid; */
-     /* border: 10px solid yellow; */
-     margin: 7em 0 3em 1em;
-     font-size: 2.5em;
-}
-.differ{
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    margin: 1.2em 0 5em 0;
-
-}
-h4{
-    padding: 1.2em 0 1em 0;
-}
-.find-out{
-    background-color: hsl(256, 26%, 20%);
-    font-size: 2em;
-    color: #fff;
-    margin: 3em;
-    padding: 1.3em;
-    margin-bottom: 3em;
-
-}
-.work{
-left: 60em;
-top: 97em;
-}
-footer{
-    display: flex;
-    margin: 1em 0 3em 1em;
-    /* border:3px solid green; */
-}
-footer ul {
-    margin: 6em;
-}
-ul{
-    list-style: none;
-    
-}
-li{
-    margin-left: 1em;
-}
-.footer-color{
-    background-color: #F1F1ED ;
-   max-height: 20em;
-   /* border:3px solid green;  */
-}
-hr{
-    width:75em;
-    margin: 3em ;
+:root {
+  font-size: 16px;
 }
 
-.img:hover{
-    border: 5px solid white;
+*  {
+  font-family: 'Karla', sans-serif;
 }
-@media (max-width:500px){
-    .differ{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 1em;
-    }
-    .find-out{
-        font-size: 2em;
-        color: #fff;
-        margin: 3em;
-        padding: 0.3em;
-    
-    }
-    hr{
-        width:25em;
-        margin: 1.5em ;
-    }
-    footer{
-        display: flex;
-        /* margin: 1.2em 0 5em 1em; */
-        flex-direction: column;
-    }
-    ul{
-        /* margin-bottom: 0.1em; */
-    }
-    li{
-        /* margin-bottom: 0.1em; */
 
-    }
+
+/* Fonts */
+.heading-font {
+  font-family: 'DM Serif Display', serif;
+}
+
+/* Colors */
+.primary-color-violet {
+  color:hsl(270, 9%, 17%);
+}
+
+.primary-color-grey-blue {
+  color: hsl(216, 30%, 68%);
+}
+
+.neutral-color-dark-violet {
+  color: hsl(270, 9%, 17%);
+}
+
+.neutral-color-grey-violet {
+  color: hsl(273, 4%, 51%);
+}
+
+.neutral-color-light-grey {
+  color: hsl(0, 0%, 98%);
+}
+
+/* Background Colors */
+.primary-bg-color-violet {
+  background-color: hsl(270, 9%, 17%);
+}
+
+/* Background Gradients */
+.primary-bg-gradient-violet {
+  background: linear-gradient(hsl(270, 9%, 17%) 80%, hsla(0, 0%, 100%, 0) 20%);
+}
+
+@media screen and (min-width: 1024px){
+  .primary-bg-lg-gradient-violet {
+    background: linear-gradient(180deg, hsl(270, 9%, 17%) 80%, hsla(0, 0%, 100%, 0) 20%);
+  }
+}
+
+/* Buttons */
+.custom-button-white {
+  background: none;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 5px 20px;
+}
+
+.custom-button-white:hover{
+  background: #fff;
+  color:hsl(270, 9%, 17%);
+}
+
+.custom-button-violet {
+  background: none;
+  border: 2px solid hsl(270, 9%, 17%);
+  color: hsl(270, 9%, 17%);
+  padding: 5px 20px;
+}
+
+.custom-button-violet:hover {
+  background: hsl(270, 9%, 17%);
+  color: white;
 }
